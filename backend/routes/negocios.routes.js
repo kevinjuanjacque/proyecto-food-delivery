@@ -7,8 +7,8 @@ const negocioRouter = Router()
 
 negocioRouter.get('/',getNegocio)
 negocioRouter.post('/',createNegocio)
-negocioRouter.put('/',updateNegocio)
-negocioRouter.delete('/',deleteNegocio)
+negocioRouter.put('/:id',updateNegocio)
+negocioRouter.delete('/:id',deleteNegocio)
 
 
 module.exports= negocioRouter
