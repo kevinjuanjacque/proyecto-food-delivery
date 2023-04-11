@@ -7,9 +7,10 @@ const ordersCollection = "OrdersDelivery";
 
 
 const ordersSchema = new mongoose.Schema({
+    status:String,
     number:Number,
     totalPrice:Number,
-    products:[String],
+    products:[],
     negocio:{
         type:mongoose.SchemaTypes.ObjectId,
         ref:"Negocio"

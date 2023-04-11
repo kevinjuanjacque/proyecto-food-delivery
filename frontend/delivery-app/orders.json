@@ -1,0 +1,94 @@
+{
+    "msg": "ok",
+    "data": [
+      {
+        "_id": "6434afc2570f2e35db043aab",
+        "products": [
+          
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6434afe9570f2e35db043aae",
+        "number": 0,
+        "totalPrice": 1000,
+        "products": [
+          "Hamburgesa"
+        ],
+        "negocio": "6434aee67e92d0d784dfe9bb",
+        "user": "6434af96570f2e35db043aa8",
+        "__v": 0
+      },
+      {
+        "_id": "6434b49b93960a95c9d4d99a",
+        "number": 1,
+        "totalPrice": 1000,
+        "products": [
+          {
+            "id": 1,
+            "name": "hamburgesa",
+            "price": 1000
+          }
+        ],
+        "negocio": "6434b32eab82be8d779eb408",
+        "user": "6434af96570f2e35db043aa8",
+        "__v": 0
+      },
+      {
+        "_id": "6434b4ae93960a95c9d4d99d",
+        "number": 2,
+        "totalPrice": 1000,
+        "products": [
+          {
+            "id": 1,
+            "name": "hamburgesa",
+            "price": 1000
+          }
+        ],
+        "negocio": "6434b32eab82be8d779eb408",
+        "user": "6434af96570f2e35db043aa8",
+        "__v": 0
+      },
+      {
+        "_id": "6434b4df93960a95c9d4d9a2",
+        "number": 2,
+        "totalPrice": 3000,
+        "products": [
+          {
+            "id": 1,
+            "name": "hamburgesa",
+            "price": 1000
+          },
+          {
+            "id": 2,
+            "name": "hamburgesa",
+            "price": 2000
+          }
+        ],
+        "negocio": "6434b4cf93960a95c9d4d99f",
+        "user": "6434af96570f2e35db043aa8",
+        "__v": 0
+      },
+      {
+        "_id": "6434b69badbbddc06564881e",
+        "number": 2,
+        "totalPrice": 3000,
+        "products": [
+          {
+            "id": 1,
+            "name": "hamburgesa",
+            "price": 1000
+          },
+          {
+            "id": 2,
+            "name": "hamburgesa",
+            "price": 2000
+          }
+        ],
+        "negocio": "6434b4cf93960a95c9d4d99f",
+        "user": "6434af96570f2e35db043aa8",
+        "__v": 0,
+        "status": "close"
+      }
+    ]
+  }

@@ -8,7 +8,7 @@ const NegocioCollection = "Negocio";
 
 const negocioSchema = new mongoose.Schema({
     name:String,
-    products:[String]
+    products:[]
 })
 
 

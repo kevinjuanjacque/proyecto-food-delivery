@@ -1,14 +1,9 @@
-const negocioModel = require("../../model/negocio.model");
-
-
-
-
-
 class NegociosManager {
 
-    getNegocios=()=>negocioModel.find()
+    negocio = []
+    getNegocios=()=>this.negocio
     
-    getNegociosById=(id)=>negocioModel.findById(id)
+    getNegociosById=(id)=>this.negocio[id]
 
     createNegocio=(negocio)=>negocioModel.create(negocio);
 
@@ -17,5 +12,3 @@ class NegociosManager {
     deleteNegocio = (id)=>negocioModel.findByIdAndRemove(id);
 
 }
-
-module.exports = new NegociosManager();

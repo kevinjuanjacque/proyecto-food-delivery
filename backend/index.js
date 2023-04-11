@@ -6,12 +6,14 @@ const userRouter = require("./routes/user.routes")
 const negocioRouter = require("./routes/negocios.routes")
 const { default: mongoose } = require("mongoose")
 const ordersRouter = require("./routes/orders.routes")
+const cors = require("cors")
 
 
 const app = express()
 
 
 //MDW
+app.use(cors())
 app.use(express.json())
 
 

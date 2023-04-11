@@ -1,10 +1,11 @@
-const userManager = require("../dao/user/user.manager")
+const UserService = require("../service/users.service")
+
 
 
 
 const getUser =async(req,res)=>{
     try {
-        const users = await userManager.getUser()
+        const users = await UserService.getUser()
         res.json({msg:'ok',data:users})
     } catch (error) {
         console.log(error)
@@ -17,7 +18,7 @@ const getUser =async(req,res)=>{
 const createUser =async(req,res)=>{
     try {
         const {user} = req.body;
-        const newUser = await userManager.createUser(user)
+        const newUser = await negocioService.createUser(user)
         res.json({msg:'ok',data:newUser})
     } catch (error) {
         console.log(error)
@@ -30,7 +31,7 @@ const updateUser =async(req,res)=>{
         const {id}= req.params; 
         const {user}=req.body;
 
-        const userUpdater = await userManager.updateUser(user,id)
+        const userUpdater = await negocioService.updateUser(user,id)
         res.json({msg:'ok',data:userUpdater})
     } catch (error) {
         console.log(error)
@@ -42,7 +43,7 @@ const deleteUser =async(req,res)=>{
     try {
         const {id}= req.params; 
 
-        const userDeleted = await userManager.deleteUser(id)
+        const userDeleted = await negocioService.deleteUser(id)
         res.json({msg:'ok',data:userDeleted})
     } catch (error) {
         console.log(error)
